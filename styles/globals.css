@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-right {
+  text-align: right;
+}
+
+/* font size */
+.text-xl {
+  font-size: 2rem;
+}
+
+/* font weight */
+.font-bold {
+  font-weight: 700;
+}
+
+/* text color */
+.text-white {
+  color: #fff;
+}
