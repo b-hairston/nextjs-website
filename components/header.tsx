@@ -31,25 +31,22 @@ const Header: React.FC = () => {
   }, []); // Empty dependency array means this effect runs only once after the initial render
 
   return (
-    <Navbar color="light" light container="md" expand="md" sticky={sticky ? "top" : undefined}>
-    <NavbarBrand href="/">Imani's Personal Website</NavbarBrand>
+    <Navbar color="light" light expand="md" sticky={sticky ? "top" : undefined}>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ms-auto" navbar>
-          <Nav className="m-auto" navbar>
-            <NavItem>
-              <NavLink href="/">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="feature">Projects</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="service">Experience</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="about">About Me</NavLink>
-            </NavItem>
-          </Nav>
+          <NavItem>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="feature">Projects</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="experience">Experience</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="about">About Me</NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
