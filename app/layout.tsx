@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Imani Hairston',
+  title: 'Hairston',
   description: 'Portfolio Site',
 }
 
