@@ -25,7 +25,7 @@ export default function Experience() {
                 </p>
                 <h4 className="mx-10" style={{ fontSize: '1.25rem' }}>Data Engineering Intern</h4> <h4 className="mx-10" style={{ fontSize: '1.25rem' }}>Bear Cognition</h4>
                 <h5 className="mx-10" style={{ fontSize: '1rem' }}>Feb 2020 - June 2022</h5>
-                <p className="text-left text-lg mx-12 pb-4">
+                <p className="text-left text-lg mx-12 pb-4e">
                     As a Data Engineering Intern, I gained hands-on experience in data engineering and analytics. I worked on various projects involving data ingestion, transformation, and visualization. 
                     I developed skills in SQL, Python, and data processing technologies. I also collaborated with the data engineering team to support data infrastructure and analytics projects.
                 </p>

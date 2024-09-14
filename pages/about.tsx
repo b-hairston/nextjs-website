@@ -12,7 +12,7 @@ export default function About() {
             <br />
             <div className="font-monsterrat min-h-screen flex flex-col items-end mx-8">
                 
-                <p className="text-right text-xl mb-2">I&#39;m Imani,</p>
+                {/* <p className="text-right text-xl mb-2">I&#39;m Imani,</p> */}
                 <p className="text-right text-xl mb-2">a data engineer</p>
                 <p className="text-right text-xl mb-4">with a passion for turning data into actionable insights and innovative solutions.</p>
                 <p className="text-right text-lg max-w-2xl">

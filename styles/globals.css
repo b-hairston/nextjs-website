@@ -1,52 +1,132 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define root variables for colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb-light: 0, 0, 0;
+  --background-rgb-light: 255, 255, 255;
+  --foreground-rgb-dark: 255, 255, 255;
+  --background-rgb-dark: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Default light mode styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb-light));
+  background-color: rgb(var(--background-rgb-light));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Dark mode styles */
+.dark {
+  color: rgb(var(--foreground-rgb-dark));
+  background-color: rgb(var(--background-rgb-dark));
 }
 
-.text-right {
-  text-align: right;
+/* Ensure background colors are consistent */
+.dark .bg-gray-100 {
+  background-color: #1a202c; /* Dark mode background color for gray-100 */
 }
 
-/* font size */
-.text-xl {
-  font-size: 2rem;
+.dark .bg-white {
+  background-color: #2d3748; /* Dark mode background color for white */
 }
 
-/* font weight */
-.font-bold {
-  font-weight: 700;
+.dark .bg-gray-200 {
+  background-color: #2d3748; /* Dark mode background color for gray-200 */
+}
+.dark .text-gray-700{
+  color: #ffffff
 }
 
-/* text color */
+/* Ensure text colors are consistent */
+.dark .text-gray-800 {
+  color: #e2e8f0; /* Dark mode text color for gray-800 */
+}
+
+.dark .text-gray-600 {
+  color: #cbd5e0; /* Dark mode text color for gray-600 */
+}
+
+.dark .text-blue-600 {
+  color: #fcfcfc; /* Dark mode text color for blue-600 */
+}
+
+.dark .text-white {
+  color: #e2e8f0; /* Dark mode text color for white */
+}
+
+/* Header and footer background color adjustments */
+.dark .bg-blue-600 {
+  background-color: #1a202c; /* Dark mode background color for blue-600 */
+}
+
+.dark .bg-gray-800 {
+  background-color: #2d3748; /* Dark mode background color for gray-800 */
+}
+
+/* Border color adjustments */
+.dark .border-gray-200 {
+  border-color: #2d3748; /* Dark mode border color for gray-200 */
+}
+
+.dark .border-gray-300 {
+  border-color: #4a5568; /* Dark mode border color for gray-300 */
+}
+
+/* Header text color adjustments */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #e2e8f0; /* Dark mode text color for all headers */
+}
+
+/* Button styling */
+.bg-blue-600 {
+  background-color: #3182ce; /* Light mode background color for blue-600 */
+}
+
 .text-white {
-  color: #fff;
+  color: #ffffff; /* Light mode text color for white */
+}
+
+.button {
+  background-color: #3182ce; /* Light mode button background color */
+  color: #ffffff; /* Light mode button text color */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark .button {
+  background-color: #4a5568; /* Dark mode button background color */
+  color: #e2e8f0; /* Dark mode button text color */
+}
+
+.dark .button:hover {
+  background-color: #2b6cb0; /* Dark mode button hover background color */
+}
+
+.button:hover {
+  background-color: #2b6cb0; /* Light mode button hover background color */
+}
+
+/* Transition effects for smooth mode switching */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sidebar open/closed transition */
+.sidebar {
+  transition: transform 0.3s ease;
+}
+
+.flex-1 {
+  transition: margin-left 0.3s ease;
 }
