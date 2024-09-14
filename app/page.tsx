@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Header with Theme Toggle */}
-      <header className="bg-blue-600 text-white py-4 flex items-center justify-between px-6">
+      <header className="bg-gray-600 text-white py-4 flex items-center justify-between px-6">
         <div className="text-center flex-grow">
           {/* Optionally place logo or site name here */}
         </div>
@@ -29,7 +29,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-12 text-center">
+      <section className="bg-gray-600 text-white py-12 text-center">
         <h2 className="text-5xl font-extrabold mb-4">Welcome to My Portfolio</h2>
         <p className="text-lg mb-8">I’m a passionate data engineer with experience in various technologies. Explore my projects below.</p>
       </section>
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <footer className="bg-blue-600 text-white py-6 text-center">
+      <footer className="bg-gray-600 text-white py-6 text-center">
         <div className="max-w-screen-md mx-auto px-4">
           <p>
             Want to get in touch?{' '}

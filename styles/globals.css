@@ -57,7 +57,7 @@ body {
 }
 
 /* Header and footer background color adjustments */
-.dark .bg-blue-600 {
+.dark .bg-gray-600 {
   background-color: #1a202c; /* Dark mode background color for blue-600 */
 }
 
@@ -85,12 +85,12 @@ body {
 }
 
 /* Button styling */
-.bg-blue-600 {
-  background-color: #3182ce; /* Light mode background color for blue-600 */
+.bg-gray-600 {
+  background-color: #d4dde5; /* Light mode background color for blue-600 */
 }
 
 .text-white {
-  color: #ffffff; /* Light mode text color for white */
+  color: #000000; /* Light mode text color for white */
 }
 
 .button {

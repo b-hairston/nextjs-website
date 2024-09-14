@@ -38,7 +38,7 @@ const ProjectPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
-      <header className="bg-blue-600 text-white py-4 flex items-center justify-between px-6">
+      <header className="bg-gray-600 text-white py-4 flex items-center justify-between px-6">
         <Link href="/" className="text-white text-xl font-bold">
           Home
         </Link>
@@ -52,7 +52,7 @@ const ProjectPage = () => {
           <p className="text-lg sm:text-xl mb-6 text-gray-800 dark:text-white">{projectDetails.description}</p>
           <Link
             href={projectDetails.link}
-            className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="inline-block px-6 py-3 bg-gray-600 text-white rounded hover:bg-blue-600"
             target="_blank"
             rel="noopener noreferrer"
           >
