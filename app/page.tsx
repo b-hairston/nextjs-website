@@ -15,13 +15,19 @@ const projects = [
     title: 'Kafka MongoDB',
     description: 'A simple Kafka producer & consumer written in Java',
   },
+  {
+    slug: 'project-3',
+    title: 'Rust Webserver',
+    description: 'Learning rust via building a webserver',
+  },
+
 ];
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Header with Theme Toggle */}
-      <header className="bg-gray-600 text-white py-4 flex items-center justify-between px-6">
+      <header className="bg-white-600 text-white py-4 flex items-center justify-between px-6">
         <div className="text-center flex-grow">
           {/* Optionally place logo or site name here */}
         </div>
@@ -29,9 +35,9 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gray-600 text-white py-12 text-center">
-        <h2 className="text-5xl font-extrabold mb-4">Welcome to My Portfolio</h2>
-        <p className="text-lg mb-8">I’m a passionate data engineer with experience in various technologies. Explore my projects below.</p>
+      <section className="bg-white-600 text-white py-12 text-center">
+        <h2 className="text-5xl text-black font-extrabold mb-4">Welcome to My Portfolio</h2>
+        <p className="text-lg text-black mb-8">I’m a passionate data engineer with experience in various technologies. Explore my projects below.</p>
       </section>
 
       {/* Projects Section */}
@@ -42,11 +48,11 @@ export default function Home() {
             <li key={project.slug} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800">
               <Link
                 href={`/projects/${project.slug}`}
-                className="text-2xl font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                className="text-2xl font-semibold text-black dark:text-white hover:underline dark:text-blue-400"
               >
                 {project.title}
               </Link>
-              <p className="text-lg mt-2 text-gray-800 dark:text-white">{project.description}</p>
+              <p className="text-lg mt-2 text-black dark:text-white">{project.description}</p>
             </li>
           ))}
         </ul>

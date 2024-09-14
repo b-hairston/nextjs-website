@@ -16,6 +16,11 @@ const projects = {
     description: 'A simple Kafka producer & consumer written in Java',
     link: 'https://github.com/b-hairston/kafka-mongo-stack',
   },
+  'project-3':{
+    title: 'Rust Webserver',
+    description: 'Learning rust via building a webserver',
+    link: 'https://github.com/b-hairston/rust-webserver',
+  },
 };
 
 // Define a type for the valid project keys

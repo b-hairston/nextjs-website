@@ -30,7 +30,7 @@ export default function ThemeToggle() {
   return (
     <button 
       onClick={toggleTheme} 
-      className="p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 flex items-center justify-center"
+      className="p-2 rounded bg-black-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 flex items-center justify-center"
     >
       {isDarkMode ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
     </button>

@@ -13,89 +13,123 @@
 
 /* Default light mode styles */
 body {
-  color: rgb(var(--foreground-rgb-light));
-  background-color: rgb(var(--background-rgb-light));
+  color: rgb(var(--foreground-rgb-light)) !important;
+  background-color: rgb(var(--background-rgb-light)) !important;
+}
+
+/* Light mode background adjustments */
+.bg-gray-100 {
+  background-color: #f7fafc !important; /* Light mode color for gray-100 */
+}
+
+.bg-white {
+  background-color: #ffffff !important; /* Light mode color for white */
+}
+
+.bg-gray-200 {
+  background-color: #edf2f7 !important; /* Light mode color for gray-200 */
+}
+
+.bg-gray-600 {
+  background-color: #718096 !important; /* Light mode color for gray-600 */
+}
+
+.bg-gray-800 {
+  background-color: #2d3748 !important; /* Light mode color for gray-800 */
+}
+
+.dark .text-lg {
+  color: #ffffff !important;
+}
+.dark .text-2xl {
+  color: #ffffff !important;
+}
+
+/* Light mode text colors */
+.text-black {
+  color: #000000 !important;
+}
+
+.text-white {
+  color: #ffffff !important; /* Correcting white text color */
+}
+
+/* Border color adjustments */
+.border-gray-200 {
+  border-color: #e2e8f0 !important; /* Light mode border color for gray-200 */
+}
+
+.border-gray-300 {
+  border-color: #e2e8f0 !important; /* Light mode border color for gray-300 */
 }
 
 /* Dark mode styles */
 .dark {
-  color: rgb(var(--foreground-rgb-dark));
-  background-color: rgb(var(--background-rgb-dark));
+  color: rgb(var(--foreground-rgb-dark)) !important;
+  background-color: rgb(var(--background-rgb-dark)) !important;
 }
 
-/* Ensure background colors are consistent */
+/* Dark mode background adjustments */
 .dark .bg-gray-100 {
-  background-color: #1a202c; /* Dark mode background color for gray-100 */
+  background-color: #1a202c !important; /* Dark mode background for gray-100 */
 }
 
 .dark .bg-white {
-  background-color: #2d3748; /* Dark mode background color for white */
+  background-color: #2d3748 !important; /* Dark mode background for white */
 }
 
 .dark .bg-gray-200 {
-  background-color: #2d3748; /* Dark mode background color for gray-200 */
-}
-.dark .text-gray-700{
-  color: #ffffff
+  background-color: #2d3748 !important; /* Dark mode background for gray-200 */
 }
 
-/* Ensure text colors are consistent */
-.dark .text-gray-800 {
-  color: #e2e8f0; /* Dark mode text color for gray-800 */
-}
-
-.dark .text-gray-600 {
-  color: #cbd5e0; /* Dark mode text color for gray-600 */
-}
-
-.dark .text-blue-600 {
-  color: #fcfcfc; /* Dark mode text color for blue-600 */
-}
-
-.dark .text-white {
-  color: #e2e8f0; /* Dark mode text color for white */
-}
-
-/* Header and footer background color adjustments */
 .dark .bg-gray-600 {
-  background-color: #1a202c; /* Dark mode background color for blue-600 */
+  background-color: #1a202c !important; /* Dark mode background for gray-600 */
 }
 
 .dark .bg-gray-800 {
-  background-color: #2d3748; /* Dark mode background color for gray-800 */
+  background-color: #2d3748 !important; /* Dark mode background for gray-800 */
 }
 
-/* Border color adjustments */
+/* Dark mode text color adjustments */
+.dark .text-white {
+  color: #e2e8f0 !important; /* Dark mode text color for white */
+}
+
+.dark .text-gray-800 {
+  color: #e2e8f0 !important; /* Dark mode text color for gray-800 */
+}
+
+.dark .text-gray-600 {
+  color: #cbd5e0 !important; /* Dark mode text color for gray-600 */
+}
+
+.dark .text-blue-600 {
+  color: #fcfcfc !important; /* Dark mode text color for blue-600 */
+}
+
+/* Border color adjustments for dark mode */
 .dark .border-gray-200 {
-  border-color: #2d3748; /* Dark mode border color for gray-200 */
+  border-color: #2d3748 !important; /* Dark mode border color for gray-200 */
 }
 
 .dark .border-gray-300 {
-  border-color: #4a5568; /* Dark mode border color for gray-300 */
+  border-color: #4a5568 !important; /* Dark mode border color for gray-300 */
 }
 
-/* Header text color adjustments */
+/* Header text color adjustments in dark mode */
 .dark h1,
 .dark h2,
 .dark h3,
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: #e2e8f0; /* Dark mode text color for all headers */
+  color: #e2e8f0 !important; /* Dark mode text color for headers */
 }
 
 /* Button styling */
-.bg-gray-600 {
-  background-color: #d4dde5; /* Light mode background color for blue-600 */
-}
-
-.text-white {
-  color: #000000; /* Light mode text color for white */
-}
-
 .button {
-  background-color: #3182ce; /* Light mode button background color */
-  color: #ffffff; /* Light mode button text color */
+  background-color: #3182ce !important; /* Light mode button background color */
+  color: #ffffff !important; /* Light mode button text color */
   padding: 0.75rem 1.5rem;
   border-radius: 0.375rem;
   display: inline-block;
@@ -105,16 +139,17 @@ body {
 }
 
 .dark .button {
-  background-color: #4a5568; /* Dark mode button background color */
-  color: #e2e8f0; /* Dark mode button text color */
+  background-color: #4a5568 !important; /* Dark mode button background color */
+  color: #e2e8f0 !important; /* Dark mode button text color */
+}
+
+/* Hover state for buttons */
+.button:hover {
+  background-color: #2b6cb0 !important; /* Light mode hover state */
 }
 
 .dark .button:hover {
-  background-color: #2b6cb0; /* Dark mode button hover background color */
-}
-
-.button:hover {
-  background-color: #2b6cb0; /* Light mode button hover background color */
+  background-color: #2b6cb0 !important; /* Dark mode hover state */
 }
 
 /* Transition effects for smooth mode switching */
