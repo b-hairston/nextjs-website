@@ -20,6 +20,12 @@ const projects = [
     title: 'Rust Webserver',
     description: 'Learning rust via building a webserver',
   },
+  {
+    slug: 'project-4',
+    title: 'Tumblr Blocker',
+    description: 'Transfer blocked lists from one account to another',
+  },
+
 
 ];
 
@@ -60,8 +66,8 @@ export default function Home() {
 
       {/* Resume Download Section */}
       <section className="bg-gray-100 dark:bg-gray-800 py-12 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">Download My Resume</h2>
-        <p className="text-lg mb-8 text-gray-700 dark:text-white">Click the button below to download my latest resume.</p>
+        <h2 className="text-3xl font-bold mb-4 text-black dark:text-gray-100">Download My Resume</h2>
+        <p className="text-lg mb-8 text-black dark:text-white">Click the button below to download my latest resume.</p>
         <a
           href="/path/to/your/resume.pdf" // Replace with the actual path to your resume
           download
