@@ -64,7 +64,7 @@ export default function Home() {
         </ul>
       </main>
 
-      {/* Resume Download Section */}
+      {/* Resume Download Section
       <section className="bg-gray-100 dark:bg-gray-800 py-12 text-center">
         <h2 className="text-3xl font-bold mb-4 text-black dark:text-gray-100">Download My Resume</h2>
         <p className="text-lg mb-8 text-black dark:text-white">Click the button below to download my latest resume.</p>
@@ -75,14 +75,14 @@ export default function Home() {
         >
           Download Resume
         </a>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <footer className="bg-gray-600 text-white py-6 text-center">
         <div className="max-w-screen-md mx-auto px-4">
           <p>
             Want to get in touch?{' '}
-            <a href="mailto:you@example.com" className="text-blue-400 hover:underline">
+            <a href="mailto:webmail@hairston.dev" className="text-blue-400 hover:underline">
               Email me
             </a>
           </p>
