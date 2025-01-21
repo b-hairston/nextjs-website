@@ -25,6 +25,12 @@ const projects = [
     title: 'Tumblr Blocker',
     description: 'Transfer blocked lists from one account to another',
   },
+  {
+    slug: 'project-5',
+    title: 'Samsung Health Data Stack',
+    description: 'ETL pipeline, visualizations illustrating my running progress',
+  },
+
 
 
 ];

@@ -36,6 +36,11 @@ const projects: { [key: string]: Project } = {
     link: 'https://www.tumblr-blocker.xyz/',
     githubLink: 'https://github.com/b-hairston/tumblr-blocker', // GitHub link included
   },
+  'project-5': {
+    title: 'Samsung Health Data Stack',
+    description: 'ETL pipeline, visualizations illustrating my running progress',
+    link: 'https://github.com/b-hairston/samsung-health',
+  },
 };
 
 // Define a type for the valid project keys
